@@ -1,26 +1,9 @@
 from django.contrib import admin
-from .models import Customer,Product,Order,OrderItem,ShippingAddress
-# Register your models here.
 
-@admin.register(Customer)
-class customerAdmin(admin.ModelAdmin):
-    '''Admin View for customer'''
-    pass
-@admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
-    '''Admin View for Product'''
-    pass
+from .models import *
 
-@admin.register(Order)
-class OrderAdmin(admin.ModelAdmin):
-    '''Admin View for Order'''
-    pass
-@admin.register(OrderItem)
-class OrderItemAdmin(admin.ModelAdmin):
-    '''Admin View for OrderItem'''
-    pass
-
-@admin.register(ShippingAddress)
-class ShippingAddressAdmin(admin.ModelAdmin):
-    '''Admin View for ShippingAddress'''
-    pass
+admin.site.register(Customer)
+admin.site.register(Product)
+admin.site.register(Order)
+admin.site.register(OrderItem)
+admin.site.register(ShippingAddress)
