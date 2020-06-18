@@ -12,7 +12,7 @@
 				<button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Agregar</button>
 				
 				<a class="btn btn-outline-success" href="#">Ver</a>
-				<h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
+				<h4 style="display: inline-block; float: right"><strong>${{product.price|floatformat:0}}</strong></h4>
 
 			</div>
 		</div>
